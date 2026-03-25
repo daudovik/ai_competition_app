@@ -48,7 +48,7 @@ export function useTransactions() {
     loading.value = true
     error.value = null
     try {
-      const res = await fetch('http://localhost:8088/api/transaction/list')
+      const res = await fetch('https://ai-competition-backend.vercel.app/api/transaction/list')
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
       const raw = Array.isArray(data) ? data : (data.data ?? data.transactions ?? [])
