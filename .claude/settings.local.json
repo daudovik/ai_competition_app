@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "WebFetch(domain:ui.shadcn.com)",
+      "WebFetch(domain:www.shadcn-vue.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/Jeffallan/claude-skills/main/skills/vue-expert-js/SKILL.md\")",
+      "Bash(npm create:*)",
+      "Bash(echo {})",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:8088/api/transaction/list)",
+      "Bash(curl -s http://localhost:8088/api/subscription/list)"
+    ]
+  }
+}

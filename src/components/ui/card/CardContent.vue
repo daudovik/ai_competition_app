@@ -1,0 +1,13 @@
+<script setup>
+import { cn } from '@/lib/utils.js'
+
+const props = defineProps({
+  class: { type: String, default: '' },
+})
+</script>
+
+<template>
+  <div :class="cn('p-4 pt-0', props.class)">
+    <slot />
+  </div>
+</template>
